@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyemangat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center h-screen p-4">
+
+    <div id="nameForm" class="flex flex-col items-center space-y-6 p-6 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105 max-w-md w-full">
+        <h1 class="text-3xl text-gray-800 font-bold animate-pulse">Masukkan Nama Anda</h1>
+        <input id="nameInput" type="text" placeholder="Nama..." class="px-4 py-2 rounded-md text-lg shadow-lg border-2 border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-gray-100 text-gray-800 placeholder-gray-400 transition duration-300 w-full">
+        <button onclick="submitName()" class="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-md text-lg text-white font-bold transition duration-300 transform hover:scale-110">Lanjut</button>
+    </div>
+
+    <div id="greeting" class="hidden flex flex-col items-center space-y-6 text-center max-w-md w-full">
+        <h1 class="text-4xl text-white font-bold"></h1>
+        <p id="motivationalText" class="text-xl text-yellow-300 font-medium"></p>
+        <p id="encouragementText" class="text-lg text-green-200 font-semibold"></p>
+        <button onclick="restart()" class="mt-8 w-full px-6 py-3 bg-red-500 hover:bg-red-600 rounded-md text-lg text-white font-bold transition duration-300 transform hover:scale-110">Kembali</button>
+    </div>
+
+    <div id="confetti" class="hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
